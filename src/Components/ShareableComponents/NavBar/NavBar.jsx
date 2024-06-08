@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const NavBar = () => {
   let Links = [
     { name: 'Home', link: '/' },
-    { name: 'Program', link: '/aboutus' },
+    { name: 'Programs', link: '/programs' },
     { name: 'About', link: '/' },
     { name: 'Resources', link: '/contactus' },
     { name: 'Get Involved', link: '/' },
