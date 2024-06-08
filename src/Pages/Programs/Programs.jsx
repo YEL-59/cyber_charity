@@ -76,7 +76,7 @@ const Programs = () => {
       </div>
       <div>
         <div className=" container mx-auto p-4 mt-10 mb-10">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
             {cardData.map((card, index) => (
               <FlipCard
                 key={index}
