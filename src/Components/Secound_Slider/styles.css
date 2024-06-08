@@ -1,0 +1,35 @@
+/* .newSwiper .custom-swiper-button-next,
+.newSwiper .custom-swiper-button-prev {
+  color: #000;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.newSwiper .custom-swiper-button-next {
+  right: 10px;
+}
+
+.newSwiper .custom-swiper-button-prev {
+  left: 10px;
+} */
+.newSwiper .custom-swiper-button-next,
+.newSwiper .custom-swiper-button-prev {
+  color: #000;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 10px;  /* Position at the top */
+  z-index: 10;
+}
+
+.newSwiper .custom-swiper-button-next {
+  right: 10px;  /* Position to the right */
+}
+
+.newSwiper .custom-swiper-button-prev {
+  right: 60px;  /* Position to the left of the next button */
+}
