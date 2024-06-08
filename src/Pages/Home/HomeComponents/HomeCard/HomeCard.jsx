@@ -3,11 +3,11 @@ import SingleCard from "./HomeCardComponent/SingleCard/SingleCard";
 
 const HomeCard = () => {
     const cardsData = [
-        { imgurl: '/public/assets/card-img/learn_card_1.png', cardtext: 'How to spot phishing scams, impersonation fraud and other common cyber threats' },
-        { imgurl: '/public/assets/card-img/learn_card_2.png', cardtext: 'How to secure your devices, accounts and passwords' },
-        { imgurl: '/public/assets/card-img/learn_card_3.png', cardtext: 'How to use encryption, VPNs and other tools to protect your online activities' },
-        { imgurl: '/public/assets/card-img/learn_card_4.png', cardtext: 'How to report and recover from a cyber incident' },
-        { imgurl: '/public/assets/card-img/learn_card_5.png', cardtext: 'And much more!' },
+        { imgurl: '/assets/card-img/learn_card_1.png', cardtext: 'How to spot phishing scams, impersonation fraud and other common cyber threats' },
+        { imgurl: '/assets/card-img/learn_card_2.png', cardtext: 'How to secure your devices, accounts and passwords' },
+        { imgurl: '/assets/card-img/learn_card_3.png', cardtext: 'How to use encryption, VPNs and other tools to protect your online activities' },
+        { imgurl: '/assets/card-img/learn_card_4.png', cardtext: 'How to report and recover from a cyber incident' },
+        { imgurl: '/assets/card-img/learn_card_5.png', cardtext: 'And much more!' },
         
       ];
       
