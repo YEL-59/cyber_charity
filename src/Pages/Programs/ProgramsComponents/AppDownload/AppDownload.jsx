@@ -14,7 +14,7 @@ const AppDownload = () => {
       <AppDownloadSection
         title="Download the Kick-Ass Seniors App"
         items={items}
-        imageUrl="/public/assets/programs-img/mobile.png"
+        imageUrl="/assets/programs-img/mobile.png"
       />
       </div>
     </section>
