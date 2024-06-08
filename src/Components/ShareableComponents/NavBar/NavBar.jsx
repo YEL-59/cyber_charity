@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import navlogo from '../../../../public/assets/nav-img/main-logo.png'
 import { motion } from 'framer-motion';
 const NavBar = () => {
   let Links = [
     { name: 'Home', link: '/' },
-    { name: 'About Us', link: '/aboutus' },
-    { name: 'Service', link: '/' },
-    { name: 'Contact US', link: '/contactus' },
+    { name: 'Program', link: '/aboutus' },
+    { name: 'About', link: '/' },
+    { name: 'Resources', link: '/contactus' },
+    { name: 'Get Involved', link: '/' },
+    { name: 'Contact ', link: '/contactus' },
  
   ];
 
@@ -20,7 +22,7 @@ const NavBar = () => {
           <p className='text-end animate-bounce'>Free Help: 1300 12 176 <span className='text-[#16b1b5]'>(AEST:8AM-6PM)</span></p>
         </div>
         <nav className="container mx-auto md:flex justify-between items-center text-black py-[18.5px] p-5 ">
-          {/* <div className="p-2 md:p-0 lg:p-0 ">
+          <div className="p-2 md:p-0 lg:p-0 ">
 
             <motion.div initial={{ opacity: 0 }}
               animate={{ opacity: 1, }}
@@ -31,7 +33,7 @@ const NavBar = () => {
               }}> <img src={navlogo} alt=" main logo" className='h-10' /></motion.div>
 
 
-          </div> */}
+          </div>
 
           <motion.div
             onClick={() => setOpen(!open)}
@@ -75,10 +77,10 @@ const NavBar = () => {
           </motion.ul>
 
           <div className={`hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ${open ? 'right-19' : 'hidden'}`}>
-            <button className="bg-[#d6e5f1] text-[#2c6777] md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/becomea_tutor">Send Money</Link>
+            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
+              <Link to="/becomea_tutor">Donate</Link>
             </button>
-            <button className="bg-green-400 text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
+            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
               <Link to="/sign_in">Sign in</Link>
             </button>
           </div>

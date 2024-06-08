@@ -22,71 +22,26 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="w-full  h-full  pb-5  text-white px-5 bg-[#000000] opacity-95  ">
+      <div className="w-full  h-full  pb-5  text-white px-5 bg-[#564e4e] opacity-95  ">
         <div className="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className=" md:w-64 lg:w-[15rem] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            {/* <div className="flex justify-center md:justify-start">
-              <img src={FooterLogo} alt=" main logo" className=" h-20 " />
-            </div> */}
-            {/* <p className="text-2xl text-blue-600 font-bold ">
-              smart home people
-            </p> */}
-            <p className="my-3 text-[16px] text-white mt-5 mb-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-            </p>
-            <p className="text-[16px] font-medium my-2 ">Connect With Us</p>
-
-            <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-2">
-              <Single_SocialIcon
-                icon={<BiLogoFacebookCircle size={30} />}
-                hoverIconSrc="https://img.icons8.com/fluent/30/000000/facebook-new.png"
-                alt="Facebook"
-                link="https://facebook.com"
-              />
-              <Single_SocialIcon
-                icon={<BiLogoTwitter size={30} />}
-                hoverIconSrc="https://img.icons8.com/fluent/30/000000/twitter.png"
-                alt="Twitter"
-                link="https://twitter.com"
-              />
-              <Single_SocialIcon
-                icon={<BiLogoInstagramAlt size={30} />}
-                hoverIconSrc="https://img.icons8.com/fluent/30/000000/instagram-new.png"
-                alt="Instagram"
-                link="https://instagram.com"
-              />
-              <Single_SocialIcon
-                icon={<BiLogoLinkedinSquare size={29} />}
-                hoverIconSrc="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
-                alt="LinkedIn"
-                link="https://linkedin.com"
-              />
-            </div>
+            <div className="flex justify-center md:justify-start">
+              <img src='/assets/footer-img/footer-logo.png' alt=" main logo" className=" h-20 " />
+            </div> 
+            <div className="flex justify-center md:justify-start">
+              <img src='/assets/footer-img/Registered-Charity-Logo.png' alt=" main logo" className=" h-40 " />
+            </div> 
+         
+           
           </div>
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div className="lg:w-3/12 md:w-1/2 w-full px-6">
+            <div className="lg:w-4/12 md:w-1/2 w-full px-6">
               <h2 className=" mb-[18px]  text-white text-[18px] font-bold select-none">
                 Company
               </h2>
               <nav className="list-none mb-5">
                 <ul className="flex flex-col gap-1 text-white">
-                  {/* <a className="hover:underline" href="">
-                    <li>Company</li>
-                  </a> */}
-
-                  {/* <li>
-                    <Link
-                      to="/help"
-                      className="hover:underline"
-                      onClick={scrollToTop}
-                      href=""
-                    >
-                      {" "}
-                      Help
-                    </Link>
-                  </li> */}
+                 
                   <Link
                     to="/aboutus"
                     className="hover:underline"
@@ -118,35 +73,41 @@ const Footer = () => {
                       Our Product
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      to="/lagel_agreement"
-                      className="hover:underline"
-                      onClick={scrollToTop}
-                      href=""
-                    >
-                      {" "}
-                      Lagel Agreement
-                    </Link>
-                  </li>
+                  <p className="text-[16px] font-medium my-2 ">Connect With Us</p>
 
-                  <Link
-                    to={"/blog"}
-                    className="hover:underline"
-                    onClick={scrollToTop}
-                    href=""
-                  >
-                    <li>Blog</li>
-                  </Link>
+            <div className="inline-flex  space-x-2">
+              <Single_SocialIcon
+                icon={<BiLogoFacebookCircle size={30} />}
+                hoverIconSrc="https://img.icons8.com/fluent/30/000000/facebook-new.png"
+                alt="Facebook"
+                link="https://facebook.com"
+              />
+              <Single_SocialIcon
+                icon={<BiLogoTwitter size={30} />}
+                hoverIconSrc="https://img.icons8.com/fluent/30/000000/twitter.png"
+                alt="Twitter"
+                link="https://twitter.com"
+              />
+              <Single_SocialIcon
+                icon={<BiLogoInstagramAlt size={30} />}
+                hoverIconSrc="https://img.icons8.com/fluent/30/000000/instagram-new.png"
+                alt="Instagram"
+                link="https://instagram.com"
+              />
+              <Single_SocialIcon
+                icon={<BiLogoLinkedinSquare size={29} />}
+                hoverIconSrc="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
+                alt="LinkedIn"
+                link="https://linkedin.com"
+              />
+            </div>
 
-                  <Link className="hover:underline" to="/contact_us">
-                    <li>Contact Us</li>
-                  </Link>
+                 
                 </ul>
               </nav>
             </div>
 
-            <div className="lg:w-3/12 md:w-1/2 w-full px-6">
+            <div className="lg:w-4/12 md:w-1/2 w-full px-6">
               <Link to="/contact_us" className="font-bold text-lg ">
                 Resources
               </Link>
@@ -175,36 +136,8 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
-            <div className="lg:w-3/12 md:w-1/2 w-full px-6">
-              <Link to="/contact_us" className="font-bold text-lg ">
-                Resources
-              </Link>
-
-              <nav className="list-none mt-3 mb-10">
-                <ul className="flex flex-col gap-[10px] text-white">
-                  <a className="hover:underline" href="#">
-                    <li>Smart Home Guide</li>
-                  </a>
-                  <Link
-                    to={"/project"}
-                    className="hover:underline"
-                    onClick={scrollToTop}
-                    href=""
-                  >
-                    <li>Project</li>
-                  </Link>
-                  <Link
-                    to={"/blog"}
-                    className="hover:underline"
-                    onClick={scrollToTop}
-                    href=""
-                  >
-                    <li>Blog</li>
-                  </Link>
-                </ul>
-              </nav>
-            </div>
-            <div className="lg:w-3/12 md:w-1/2 w-full px-6">
+            
+            <div className="lg:w-4/12 md:w-1/2 w-full px-6">
               <h2 className="mb-[18px]  text-white text-[18px] font-bold select-none">
                 Help
               </h2>
