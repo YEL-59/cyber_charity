@@ -9,42 +9,49 @@ import { Pagination, Navigation } from "swiper/modules";
 export default function Secound_Slider() {
   return (
     <>
-     {/* <h1 className="text-xl mx-auto font-bold">Recent Cyber Attacks in Australia</h1> */}
-      <div className="flex gap-2  justify-end  mr-16">
-    
-        <div className="custom-swiper-button-prev flex items-center justify-center p-2 bg-[#16b1b5] rounded-full">
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            ></path>
-          </svg>
+      <div className="flex justify-between">
+        <div>
+        <h1 className="text-3xl text-gray-500 mx-auto font-bold">
+        Recent Cyber Attacks in Australia
+      </h1>
         </div>
-        <div className="custom-swiper-button-next flex items-center justify-center p-2 bg-[#16b1b5] rounded-full">
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
+        <div className="flex gap-2  justify-end  mr-16">
+          <div className="custom-swiper-button-prev flex items-center justify-center p-2 bg-[#16b1b5] rounded-full">
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              ></path>
+            </svg>
+          </div>
+          <div className="custom-swiper-button-next flex items-center justify-center p-2 bg-[#16b1b5] rounded-full">
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
+    
+
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -60,16 +67,18 @@ export default function Secound_Slider() {
         className="newSwiper"
       >
         {newSlidesData.map((slide, index) => (
-          <SwiperSlide key={index} className="flex justify-center items-center  mt-5">
-            <div
-              className="flex flex-col md:flex-row justify-between items-center  w-full shadow-2xl rounded-xl bg-slate-100"
-             
-            >
+          <SwiperSlide
+            key={index}
+            className="flex justify-center items-center  mt-5"
+          >
+            <div className="flex flex-col md:flex-row justify-between items-center  w-full shadow-2xl rounded-xl bg-slate-100">
               <div className="flex-1 md:pr-4 mb-4 md:mb-0   p-4 rounded">
-                <h2 className="text-3xl font-medium mb-2 leading-relaxed">
+                <h2 className="text-3xl text-gray-500 font-medium mb-2 leading-relaxed">
                   {slide.title}
                 </h2>
-                <p className="text-xl mb-4 max-w-lg leading-relaxed">{slide.text}</p>
+                <p className="text-xl font-thin mb-4 max-w-lg leading-relaxed">
+                  {slide.text}
+                </p>
                 <button className="px-4 py-2 bg-[#16b1b5] text-white rounded hover:bg-blue-700">
                   {slide.buttonText}
                 </button>
@@ -110,5 +119,4 @@ const newSlidesData = [
     buttonText: "Read More",
     imageUrl: "/assets/Secound_Slider-img/slide-3.png",
   },
- 
 ];
