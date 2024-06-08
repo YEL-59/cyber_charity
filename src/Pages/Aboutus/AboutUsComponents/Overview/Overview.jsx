@@ -13,7 +13,7 @@ const Overview = () => {
             </p>
           </div>
           <div className="lg:w-1/2">
-            <img src="/public/assets/aboutus-img/overview-image.png" alt="Overview" className="lg:w-full rounded-3xl shadow-lg"/>
+            <img src="/assets/aboutus-img/overview-image.png" alt="Overview" className="lg:w-full rounded-3xl shadow-lg"/>
           </div>
         </div>
       </div>

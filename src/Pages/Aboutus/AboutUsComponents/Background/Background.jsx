@@ -7,7 +7,7 @@ const Background = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:order-2">
             <img
-              src="/public/assets/aboutus-img/our_background.png"
+              src="/assets/aboutus-img/our_background.png"
               alt="Overview"
               className="lg:w-full rounded-3xl shadow-lg"
             />
