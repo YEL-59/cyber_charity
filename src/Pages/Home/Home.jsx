@@ -52,7 +52,7 @@ const Home = () => {
         <FAQ/>
       </div>
       <div className="container mx-auto mb-5">
-          <img src="/public/assets/cyber_security_banner.png" className="flex justify-center items-center align-middle h-auto w-full" alt="" />
+          <img src="/assets/cyber_security_banner.png" className="flex justify-center items-center align-middle h-auto w-full" alt="" />
         </div>
       <Footer />
     </>

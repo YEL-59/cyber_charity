@@ -6,7 +6,7 @@ const AdvertiasmentHome = () => {
           <div className="flex flex-col md:flex-row justify-between items-center  w-full shadow-2xl rounded-xl bg-slate-100">
           <div className="flex-1 flex justify-start ">
               <img
-                src="/public/assets/cyber-banner-women.png"
+                src="/assets/cyber-banner-women.png"
                 alt=""
                 className="w-full h-auto rounded-lg shadow-xl bg-cover"
               />
