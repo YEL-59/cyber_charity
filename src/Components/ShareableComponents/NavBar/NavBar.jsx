@@ -7,8 +7,8 @@ const NavBar = () => {
     { name: 'Home', link: '/' },
     { name: 'Programs', link: '/programs' },
     { name: 'About', link: '/aboutus' },
-    { name: 'Resources', link: '/contactus' },
-    { name: 'Get Involved', link: '/' },
+    { name: 'Resources', link: '/resources' },
+    { name: 'Get Involved', link: '/getinvoice' },
     { name: 'Contact ', link: '/contactus' },
  
   ];
