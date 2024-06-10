@@ -30,7 +30,7 @@ const NavBar = () => {
                 ease: "linear",
                 duration: 2,
 
-              }}> <img src={navlogo} alt=" main logo" className='h-10' /></motion.div>
+              }}> <img src={navlogo} alt=" main logo" className='h-16' /></motion.div>
 
 
           </div>
@@ -57,7 +57,7 @@ const NavBar = () => {
                 whileHover={{ scale: 1.1 }}
               >
                 <span className="absolute inset-x-0 bottom-0 h-.5 bg-[#089bab] border-b border-transparent transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
-                <Link to={link.link} className="duration-500 font-bold">
+                <Link to={link.link} className="duration-500 text-[20px] font-bold">
                   {link.name}
                 </Link>
               </motion.li>
@@ -77,10 +77,10 @@ const NavBar = () => {
           </motion.ul>
 
           <div className={`hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ${open ? 'right-19' : 'hidden'}`}>
-            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
+            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[20px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
               <Link to="/becomea_tutor">Donate</Link>
             </button>
-            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
+            <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[20px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
               <Link to="/sign_in">Sign in</Link>
             </button>
           </div>
