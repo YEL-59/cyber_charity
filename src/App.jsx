@@ -6,6 +6,7 @@ import Aboutus from './Pages/Aboutus/Aboutus';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import GetInvoice from './Pages/GetInvoice/GetInvoice';
 import Resources from './Pages/Resources/Resources'
+import Donate from './Pages/Donate/Donate';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/getinvoice" element={<GetInvoice />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path='/donate' element={<Donate/>}/>
       </Routes>
     </>
   );

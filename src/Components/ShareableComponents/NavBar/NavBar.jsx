@@ -78,7 +78,7 @@ const NavBar = () => {
 
           <div className={`hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ${open ? 'right-19' : 'hidden'}`}>
             <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[20px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
-              <Link to="/becomea_tutor">Donate</Link>
+              <Link to="/donate">Donate</Link>
             </button>
             <button className="bg-[#16b1b5] text-white md:text-[11px] lg:text-[20px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
               <Link to="/sign_in">Sign in</Link>
