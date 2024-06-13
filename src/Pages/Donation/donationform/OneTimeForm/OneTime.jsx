@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { connect } from "react-redux";
 import { setDonationAmount } from "../../../../redux/reducers/donationSlice";
@@ -17,10 +17,12 @@ const OneTime = ({ selectedForm, donationAmount, setDonationAmount }) => {
   };
 
   const handleDonate = (amount) => {
+    setSelectedAmount(amount); // Update selected amount
     setDonationAmount(amount);
     console.log(`Donating $${amount}`);
   };
-
+  // State to keep track of selected donation amount
+  const [selectedAmount, setSelectedAmount] = useState(0);
   return (
     <>
       <div>
@@ -71,9 +73,13 @@ const OneTime = ({ selectedForm, donationAmount, setDonationAmount }) => {
           <div>
             <button
               type="submit"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              className={`bg-${
+                selectedAmount ? "green" : "gray"
+              }-500 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5`}
             >
-              Submit Donation
+              {selectedAmount
+                ? `Donating  $${selectedAmount}`
+                : "Submit Donation"}
             </button>
           </div>
         </form>
@@ -83,7 +89,7 @@ const OneTime = ({ selectedForm, donationAmount, setDonationAmount }) => {
 };
 
 const mapStateToProps = (state) => ({
-  donationAmount: state.donation.amount, 
+  donationAmount: state.donation.amount,
 });
 
 const mapDispatchToProps = { setDonationAmount };
