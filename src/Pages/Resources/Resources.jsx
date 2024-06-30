@@ -15,10 +15,12 @@ const Resources = () => {
           subtitle="Our blog features the latest tips, advice and stories related to senior online security and technology use. Bookmark this page to stay on top of emerging cybersecurity issues and innovations relevant to older adults."
         />
       </div>
-      <div>
+    <div>
+    <div  className='container mx-auto'>
         <Category />
       </div>
       <DigitalSecuritySection />
+    </div>
 
       <div>
         <section>
